@@ -1,0 +1,38 @@
+{
+  "name": "cortex-plugin-stable-diffusion",
+  "version": "1.0.0",
+  "description": "Stable Diffusion Workflow Composer — ComfyUI integration for complex SD pipelines: img2img, ControlNet, IP-Adapter, inpainting",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-stable-diffusion",
+  "homepage": "https://cortexprism.io/marketplace/plugins/stable-diffusion",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "sd_generate",
+      "description": "Generate image with Stable Diffusion pipeline",
+      "params": []
+    },
+    {
+      "name": "sd_compose_workflow",
+      "description": "Design ComfyUI workflow from description",
+      "params": []
+    },
+    {
+      "name": "sd_batch_process",
+      "description": "Batch process images with a workflow",
+      "params": []
+    },
+    {
+      "name": "sd_iterate",
+      "description": "Iterate on generated image with feedback",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
