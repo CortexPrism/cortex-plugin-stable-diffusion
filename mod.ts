@@ -1,6 +1,6 @@
 // deno-lint-ignore-file require-await, no-unused-vars
-import type { PluginContext, Tool, ToolResult } from 'cortex/plugins';
-function ok(n: string, o: unknown, s: number): ToolResult {
+import type { PluginContext, Tool, ToolCallResult } from 'cortex/plugins';
+function ok(n: string, o: unknown, s: number): ToolCallResult {
   return {
     toolName: n,
     success: true,
